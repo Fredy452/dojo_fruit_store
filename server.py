@@ -26,7 +26,7 @@ def checkout():
     session["last_name"] = request.form["last_name"]
     session["student_id"] = request.form["student_id"]
 
-    #Cobrando a cliente
+    #Cobrando a cliente a git
     total_amount = int(session['strawberry']) + int(session['raspberry']) + int(session['apple'])  # noqa: E501
     print(f"Cobrando a {session['first_name']} por total {total_amount} frutas")
 
